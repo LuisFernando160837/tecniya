@@ -33,7 +33,7 @@ export default function HomePage() {
   })
   const [enviado, setEnviado] = useState(false)
 
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api'
+  const API_URL = 'https://tecniya.onrender.com/api'
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
