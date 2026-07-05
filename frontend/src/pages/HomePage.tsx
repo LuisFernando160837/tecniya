@@ -38,12 +38,12 @@ export default function HomePage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     const msg = encodeURIComponent(
-      `Hola TecniYA, necesito soporte técnico.%0A%0A` +
-      `*Nombre:* ${form.nombre}%0A` +
-      `*Teléfono:* ${form.telefono}%0A` +
-      `*Dirección:* ${form.direccion}%0A` +
-      `*Distrito:* ${form.distrito}%0A` +
-      `*Equipo:* ${form.tipo_equipo} - ${form.marca} ${form.modelo}%0A` +
+      `Hola TecniYA, necesito soporte técnico.\n\n` +
+      `*Nombre:* ${form.nombre}\n` +
+      `*Teléfono:* ${form.telefono}\n` +
+      `*Dirección:* ${form.direccion}\n` +
+      `*Distrito:* ${form.distrito}\n` +
+      `*Equipo:* ${form.tipo_equipo} - ${form.marca} ${form.modelo}\n` +
       `*Problema:* ${form.descripcion}`
     )
     try {
