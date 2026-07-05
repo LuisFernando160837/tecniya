@@ -342,8 +342,8 @@ export default function HomePage() {
                       className="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
                   </div>
                   <div>
-                    <label className="mb-1.5 block text-xs font-semibold text-gray-700">Modelo</label>
-                    <input type="text" placeholder="Ej: Pavilion 15, Galaxy S24"
+                    <label className="mb-1.5 block text-xs font-semibold text-gray-700">Modelo <span className="text-gray-400 font-normal">(opcional)</span></label>
+                    <input type="text" placeholder="No lo sé"
                       value={form.modelo} onChange={(e) => setForm({ ...form, modelo: e.target.value })}
                       className="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20" />
                   </div>
